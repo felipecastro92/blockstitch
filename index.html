@@ -6,38 +6,579 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" type="text/css" href="css/icon_set.css">
+    <title>Blockstitch styles</title>
   </head>
   <body>
-    <main>
-        <section>
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3 class="light">Heading 3 - Light</h3>
-            <h3 class="strong">Heading 3 - Strong</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
-        </section>
-        <section>
-            <p class="giant">Giant paragraph</p>
-            <p class="big">Big paragraph</p>
-            <p>Normal paragraph</p>
-            <p class="small">Small paragraph</p>
-            <span class="menu-item">Menu item</span>
-        </section>
-        <section>
-            <div class="hex h1">
-                <h2>23</h2>
-                <span class="menu-item">orders running</span>
-                <span class="menu-item">orders completed</span>
+    <div class="container-fluid">
+        <main class="row justify-content-end no-gutters">
+            
+            <nav id="sidebar" class="col-md-3">
+                <figure>
+                    <img src="assets/logo/blockstitch_logo_white.svg" >
+                </figure>
+                <ul>
+                    <li><a href="#headings">Headings</a></li>
+                    <li><a href="#paragraphs">Paragraphs</a></li>
+                    <li><a href="#shapes">Shapes</a></li>
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#cards">Cards</a></li>
+                    <li><a href="#icons">Icons</a></li>
+                    <li><a href="#navigation">Navigation</a></li>
+                </ul>
+            </nav>
+      
+            <div class="col-md-9">
+                <section id="headings">
+                    <span class="section-title">Headings</span>
+                    <h1>Heading 1</h1>
+                    <br>
+                    <h2>Heading 2</h2>
+                    <br>
+                    <h3 class="light">Heading 3 - Light</h3>
+                    <br>
+                    <h3 class="strong">Heading 3 - Strong</h3>
+                    <br>
+                    <h4>Heading 4</h4>
+                    <br>
+                    <h5>Heading 5</h5>
+                    <br>
+                    <h6>Heading 6</h6>
+                </section>
             </div>
-            <div class="hex h2"></div>
-        </section>
-    </main>
+            <div class="col-md-9">
+                <section id="paragraphs">
+                    <span class="section-title">Paragraphs</span>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="giant">Giant paragraph</p>
+                            <br>
+                            <p class="big">Big paragraph</p>
+                            <br>
+                            <p>Normal paragraph</p>
+                            <br>
+                            <p class="small">Small paragraph</p>
+                            <br>
+                            <span class="menu-item">Menu item</span>
+                        </div>
+                        <div class="col-md-6">
+                            <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before. Many say exploration is part of our destiny, but it’s actually our duty to future generations and their quest to ensure the survival of the human species.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-9">
+                <section id="shapes">
+                    <span class="section-title">Shapes</span>
+                    <div class="hex h-1">
+                        <div class="hex-content text-center">
+                            <h2>23</h2>
+                            <span class="menu-item">orders running</span>
+                            
+                        </div>
+                    </div>
+                    <div class="hex h-2">
+                        <div class="hex-content text-center">
+                            <h2>130</h2>
+                            <span class="menu-item">orders completed</span>
+                        </div>
+                    </div>
+
+                    <div class="hex-photo large">
+                        <svg class="svg">
+                            <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0.977,0.408 L0.812,0.092 C0.782,0.035,0.726,0,0.666,0 H0.334 C0.274,0,0.218,0.035,0.188,0.092 L0.023,0.408 C-0.008,0.465,-0.008,0.535,0.023,0.592 L0.188,0.908 C0.218,0.965,0.274,1,0.334,1 H0.666 C0.726,1,0.782,0.965,0.812,0.908 L0.977,0.592 C1,0.535,1,0.465,0.977,0.408"></path></clipPath>
+                        </svg>
+                        <figure class="clipped">
+                            <img src="assets/img/pic-1.png">
+                        </figure>
+                    </div>
+
+                    <div class="hex-photo medium">
+                        <svg class="svg">
+                            <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0.977,0.408 L0.812,0.092 C0.782,0.035,0.726,0,0.666,0 H0.334 C0.274,0,0.218,0.035,0.188,0.092 L0.023,0.408 C-0.008,0.465,-0.008,0.535,0.023,0.592 L0.188,0.908 C0.218,0.965,0.274,1,0.334,1 H0.666 C0.726,1,0.782,0.965,0.812,0.908 L0.977,0.592 C1,0.535,1,0.465,0.977,0.408"></path></clipPath>
+                        </svg>
+                        <figure class="clipped">
+                            <img src="assets/img/pic-2.png">
+                        </figure>
+                    </div>
+                    
+
+                    <div class="hex-photo medium highlight">
+                        <svg class="svg">
+                            <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0.977,0.408 L0.812,0.092 C0.782,0.035,0.726,0,0.666,0 H0.334 C0.274,0,0.218,0.035,0.188,0.092 L0.023,0.408 C-0.008,0.465,-0.008,0.535,0.023,0.592 L0.188,0.908 C0.218,0.965,0.274,1,0.334,1 H0.666 C0.726,1,0.782,0.965,0.812,0.908 L0.977,0.592 C1,0.535,1,0.465,0.977,0.408"></path></clipPath>
+                        </svg>
+                        <figure class="clipped">
+                            <img src="assets/img/pic-4.png">
+                        </figure>
+                    </div>
+                    
+
+                    <div class="hex-photo medium online">
+                        <svg class="svg">
+                            <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"><path d="M0.977,0.408 L0.812,0.092 C0.782,0.035,0.726,0,0.666,0 H0.334 C0.274,0,0.218,0.035,0.188,0.092 L0.023,0.408 C-0.008,0.465,-0.008,0.535,0.023,0.592 L0.188,0.908 C0.218,0.965,0.274,1,0.334,1 H0.666 C0.726,1,0.782,0.965,0.812,0.908 L0.977,0.592 C1,0.535,1,0.465,0.977,0.408"></path></clipPath>
+                        </svg>
+                        <figure class="clipped">
+                            <img src="assets/img/pic-3.png">
+                        </figure>
+                    </div>
+
+                </section>
+            </div>
+            <div class="col-md-9">
+                <section id="buttons">
+                    <span class="section-title">Buttons</span>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-primary btn-big">Primary big button</a>
+                            <br>
+                            <br>
+                            <a href="#" class="btn btn-secondary btn-big">Secondary big button</a>
+                            <br>
+                            <br>
+                            <a href="#" class="btn btn-primary">Primary normal button</a>
+                            <br>
+                            <br>
+                            <a href="#" class="btn btn-secondary">Secondary normal button</a>
+                            <br>
+                            <br>
+                            <a href="#" class="text-link">Link text</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-primary btn-big">Primary big button icon<i class="icon-control_point"></i></a>
+                            <br>
+                            <br>
+                            <a href="#" class="btn btn-secondary btn-big">Secondary big button<i class="icon-place"></i></a>
+                            <br>
+                            <br>
+                            <a href="#" class="btn btn-primary">Primary normal button<i class="icon-loop"></i></a>
+                            <br>
+                            <br>
+                            <a href="#" class="btn btn-secondary">Secondary normal button<i class="icon-mail_outline"></i></a>
+                            <br>
+                            <br>
+                            <a href="#" class="text-link">View all<i class="icon-open_in_new"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-9">
+                <section id="tables" class="content-color">
+                    <span class="section-title">Tables</span>
+                    <div class="table-responsive">
+                        <table class="table table-dark table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Feature</th>
+                                    <th scope="col">S</th>
+                                    <th scope="col">M</th>
+                                    <th scope="col">L</th>
+                                    <th scope="col">XL</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scrope="row">Waist width</th>
+                                    <td>31</td>
+                                    <td>32</td>
+                                    <td>34</td>
+                                    <td>36</td>
+                                </tr>
+
+                                <tr>
+                                    <th scrope="row">Out seam</th>
+                                    <td>31</td>
+                                    <td>32</td>
+                                    <td>34</td>
+                                    <td>36</td>
+                                </tr>
+
+                                <tr>
+                                    <th scrope="row">In seam</th>
+                                    <td>31</td>
+                                    <td>32</td>
+                                    <td>34</td>
+                                    <td>36</td>
+                                </tr>
+
+                                <tr>
+                                    <th scrope="row">Hip width</th>
+                                    <td>31</td>
+                                    <td>32</td>
+                                    <td>34</td>
+                                    <td>36</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-9">
+                <section id="forms">
+                    <span class="section-title">Forms</span>
+                    <h3>Create a new brand</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name">
+                            <small id="nameHelp" class="form-text text-muted">The name is available!</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea class="form-control" id="description" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="select">Select example</label>
+                            <select class="form-control" id="select">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" checked id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Default checkbox active
+                                 </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Default checkbox 
+                                 </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                              <label class="form-check-label" for="defaultCheck2">
+                                Disabled checkbox
+                              </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                              <label class="form-check-label" for="exampleRadios1">
+                                Default radio
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                              <label class="form-check-label" for="exampleRadios2">
+                                Second default radio
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                              <label class="form-check-label" for="exampleRadios3">
+                                Disabled radio
+                              </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="formControlRange">Example Range input</label>
+                            <input type="range" class="custom-range form-control-range" id="formControlRange">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-big">Create brand</button>
+                    </form>
+                </section>
+            </div>
+            <div class="col-md-9">
+                <section id="cards">
+                    <span class="section-title">Cards</span>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="assets/img/style-1.png" class="card-img-top" alt="style">
+                                <div class="card-body">
+                                    <p>Style 1</p>
+                                    <p class="small dimmed">Yesterday</p>
+                                </div>
+                                <div class="dots-menu">
+                                    <span>menu</span>
+                                    <nav class="dots-menu-content">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Move to collection</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Edit</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Duplicate</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Delete</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="assets/img/style-2.jpg" class="card-img-top" alt="style">
+                                <div class="card-body">
+                                    <p>Style 1</p>
+                                    <p class="small dimmed">Yesterday</p>
+                                </div>
+                                <div class="dots-menu">
+                                    <span>menu</span>
+                                    <nav class="dots-menu-content">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Move to collection</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Edit</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Duplicate</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Delete</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="assets/img/style-3.jpg" class="card-img-top" alt="style">
+                                <div class="card-body">
+                                    <p>Style 1</p>
+                                    <p class="small dimmed">Yesterday</p>
+                                </div>
+                                <div class="dots-menu">
+                                    <span>menu</span>
+                                    <nav class="dots-menu-content">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Move to collection</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Edit</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Duplicate</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Delete</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="assets/img/style-4.jpg" class="card-img-top" alt="style">
+                                <div class="card-body">
+                                    <p>Style 1</p>
+                                    <p class="small dimmed">Yesterday</p>
+                                </div>
+                                <div class="dots-menu">
+                                    <span>menu</span>
+                                    <nav class="dots-menu-content">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Move to collection</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Edit</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Duplicate</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Delete</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-9">
+                <section id="cards-images">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card-image">
+                                <img class="img-fluid" src="assets/img/collection-1.png">
+                                <div class="card-body">
+                                    <p>Summer collection</p>
+                                    <p class="small dimmed">Yesterday</p>
+                                </div>
+                                <div class="dots-menu">
+                                    <span>menu</span>
+                                    <nav class="dots-menu-content">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Edit</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Duplicate</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Delete</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                 
+
+      
+                        <div class="col-md-3">
+                            <div class="card-image">
+                                <img class="img-fluid" src="assets/img/collection-2.png">
+                                <div class="card-body">
+                                    <p>Collection 2</p>
+                                    <p class="small dimmed">Yesterday</p>
+                                </div>
+                                <div class="dots-menu">
+                                    <span>menu</span>
+                                    <nav class="dots-menu-content" style="display: block">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Edit</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Duplicate</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Delete</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                   
+
+             
+                        <div class="col-md-3">
+                            <div class="card-image">
+                                <img class="img-fluid" src="assets/img/collection-3.png">
+                                <div class="card-body">
+                                    <p>Winter collection</p>
+                                    <p class="small dimmed">Yesterday</p>
+                                </div>
+                                <div class="dots-menu">
+                                    <span>menu</span>
+                                    <nav class="dots-menu-content">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Edit</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Duplicate</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Delete</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="btn-card">
+                                <div class="card-body text-center">
+                                    <i class="icon-add_circle"></i>
+                                    <p>Create new board</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="col-md-9">
+                <section id="icons">
+                    <span class="section-title">icons</span>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1>icon-add<i class="icon-add"></i></h1>
+                            <h2>icon-search<i class="icon-search"></i></h2>
+                            <h3>icon-notifications<i class="icon-notifications"></i></h3>
+                            <h4>icon-local_pizza<i class="icon-local_pizza"></i></h4>
+                            <h5>icon-spa<i class="icon-spa"></i></h5>
+                        </div>
+                        <div class="col-md-6">
+                            <p><i class="icon-schedule"></i>icon-schedule</p>
+                            <p><i class="icon-restore"></i>icon-restore</p>
+                            <p><i class="icon-store"></i>icon-store</p>
+                            <p><i class="icon-lightbulb"></i>icon-lightbulb</p>
+                            <p><i class="icon-history"></i>icon-history</p>
+                            <a href="icon-library.html" class="btn btn-primary" target="_blank">Check the 1047 icons<i class="icon-open_in_new"></i></a>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+
+            <div class="col-md-9">
+                <section id="navigation">
+                    <span class="section-title">Navigation</span>
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <nav class="vertical-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="active">Virtual boards<i class="icon-dashboard"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Measurements<i class="icon-straighten"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Washes and treatment<i class="icon-gradient"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Materials<i class="icon-waves"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Print Detail<i class="icon-invert_colors"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Label, handtag, packaging<i class="icon-loyalty"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Quantity breakdown<i class="icon-line_style"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-8">
+                            <nav class="horizontal-menu">
+                                <ul>
+                                    <li><a href="#" class="menu-item">Home</a></li>
+                                    <li><a href="#" class="active menu-item">Styles</a></li>
+                                    <li><a href="#" class="menu-item">Collections</a></li>
+                                    <li><a href="#" class="menu-item">Orders</a></li>
+                                    <li><a href="#" class="menu-item">Factories</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
 
 
 
